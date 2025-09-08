@@ -1,0 +1,169 @@
+/* 기본 스타일 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gamja Flower", sans-serif;
+    color: #323232;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px auto 10px;
+    font-size: 50px;
+}
+
+p {
+    text-align: center;
+    margin: 10px auto 20px;
+    font-size: 100px;
+    font-style: bold;
+}
+
+/* 메인 GIF */
+.main {
+    margin: 50px auto 100px;
+    width: 400px;
+    height: 400px;
+    max-width: 90%;
+    background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWlpcGcxbzl2Y2U2dm1pdWM4djl4YnJxMWJyNmRtMWpxd3Y0a3h4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6WFScxN6fi95z3YVQD/giphy.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 사진 영역 */
+.photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGRld2lhODdtbGttMnI2b2Izd29tYXZnbjV5ODd5Yjh3OXZjcTdqaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UsCT2mzipv6I13GD2b/giphy.gif");
+    color: #fff;
+    padding: 70px 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+    margin: 10px auto 90px;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(39, 0, 98);
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+#message {
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    margin: 100px auto 40px;
+}
+
+
+/* 사진 그룹 */
+.photos1, .photos2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.photos1 div, .photos2 div {
+    width: 400px;
+    height: 400px;
+    max-width: 90vw;
+    align-items: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.photos3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.photos3 div {
+    width: 400px;
+    height: 400px;
+    max-width: 90vw;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* 사진 이미지 */
+.no1 { background-image: url("10.jpg"); }
+.no2 { background-image: url("3.jpg"); }
+.no3 { background-image: url("4.jpg"); }
+.no4 { background-image: url("2.jpg"); }
+.no5 { background-image: url("6.jpg"); }
+.no6 { background-image: url("5.jpg"); }
+.no7 { background-image: url("7.jpg"); }
+.no8 { background-image: url("8.jpg"); }
+.no9 { background-image: url("9.jpg"); }
+
+
+/* 화살표, 기타 이미지 */
+.img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+/* 유튜브 영상 */
+.video {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    h1 { font-size: 2rem; }
+    p { font-size: 2rem; }
+    h2, h3 { font-size: 2.5rem; }
+    #message { font-size: 1.5rem; }
+
+    .photos1 div, .photos2 div, .photos3 div {
+        flex: 1 1 calc(50% - 20px); /* 2개씩 */
+    }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+    p { font-size: 1.5rem; }
+    h2, h3 { font-size: 2rem; }
+    #message { font-size: 1.2rem; }
+
+    .photos1 div, .photos2 div, .photos3 div {
+        flex: 1 1 100%; /* 1개씩 */
+    }
+}
+
+.last {
+    width: 500px;
+    height: auto;
+    margin: 50px auto 100px;
+}
